@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello TND!</title>
+    <script src="./blocksdk.js"></script>
+</head>
+<body>
+    <label for="name">Enter your name</label>
+    <input type="text" name="name" id="name" placeholder="name">
+    <script>
+        var sdk = new window.sfdc.BlockSDK();
+        console.log('SDK Loaded ' , sdk);
+
+        document.getElementById('name').addEventListener('change', function() {
+            var textAreaContent = document.getElementById('name').value;
+            var html = `<b> Welcome to True North Dreaming, ${textAreaContent}!!! </b>`;
+            sdk.setContent(html, function(payload) {
+                console.log('Set Content Payload ' ,payload);
+            });
+            
+            sdk.setContent(html, function(payload) {
+                console.log('Set Content Payload ' ,payload);
+            });
+        });
+    </script>
+</body>
+</html>
