@@ -12,3 +12,7 @@ A simple custom content block that gets name and displays a welcome message in e
 Folder: 1. Hello TND
 
 ## Code Activity - JB
+
+A Custom JB Activity that allows for Ampscript or SSJS codes to be executed from within Journey Builder.
+
+Folder: 2. Code Activity
