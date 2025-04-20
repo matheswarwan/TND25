@@ -1,0 +1,45 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "./images/code-icon.png",
+    "iconSmall": "./images/code-icon.png",
+    "category": "message",
+    "isConfigured": false,
+    "version": "1.0.1"
+  },
+"type": "CODE",
+  "lang": {
+    "en-US": {
+      "name": "Code Activity",
+      "description": "Custom Code Activity to run AMP and SSJS scrips inside an Interaction."
+    }
+  },
+  "arguments": {
+    "code": "",
+    "parseOutputAsJson": false,
+    "execute": {
+      "inArguments": {},
+      "outArguments": {},
+      "format": "json",
+      "useJwt": false,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "jb-code-activity"
+  },
+  "userInterfaces": {
+    "configurationSupportsReadOnlyMode": true,
+
+    "runningModal": {
+      "url": "index.html",
+      "hideDetailsButton": true
+    }
+  },
+  "edit": {
+    "url": "index.html",
+    "height": 400,
+    "width": 800,
+    "steps": 1
+  }
+}

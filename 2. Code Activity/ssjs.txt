@@ -1,0 +1,12 @@
+<script runat="server">
+Platform.Load('Core', '1');
+
+var email = '{{Event.DEAudience-7f87bab2-2cb6-a90f-b817-2614a22f4ff6."emailAddress"}}'
+var id = '{{Event.DEAudience-7f87bab2-2cb6-a90f-b817-2614a22f4ff6."emailAddress"}}'
+
+var cols = ['id', 'email'];
+var vals = [id, email];
+
+Platform.Function.InsertData('Journey History', cols, vals);
+
+</script>
